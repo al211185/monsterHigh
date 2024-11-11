@@ -46,12 +46,6 @@ class ViewControllerLista: UICollectionViewController {
         task.resume()
     }
     
-    // Función para actualizar la interfaz de usuario con los datos del monstruo
-    // Este método ahora no es necesario porque cada celda se actualizará en el método cellForItemAt
-    func updateUI(with monster: Monster?) {
-        // Este método ya no se usa, ya que las celdas se gestionan en el UICollectionView
-    }
-    
     // MARK: - UICollectionViewDataSource
     
     // Este método es llamado cada vez que se necesita una celda
@@ -91,19 +85,15 @@ class ViewControllerLista: UICollectionViewController {
     // MARK: - UICollectionViewDelegateFlowLayout (opcional)
 
     // Este método se ejecuta cuando el usuario hace clic en una celda de la colección
+    // Método donde se selecciona un monstruo
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedMonster = monsters[indexPath.item]
-        performSegue(withIdentifier: "showDetails", sender: selectedMonster.id)
-    }
-
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails" {
-            if let detallesVC = segue.destination as? DetallesViewController,
-               let monsterId = sender as? Int {
-                print("Pasando el id del monstruo: \(monsterId)")  // Verifica el id
-                detallesVC.monsterId = monsterId
-            }
+        print("Seleccionando monstruo con ID: \(selectedMonster.id)")  // Verifica que el ID es correcto
+        
+        // Instanciar el ViewController de detalles
+        if let detallesVC = self.storyboard?.instantiateViewController(withIdentifier: "DetallesViewController") as? DetallesViewController {
+            detallesVC.monsterId = selectedMonster.id  // Pasar el ID del monstruo
+            self.navigationController?.pushViewController(detallesVC, animated: true)
         }
     }
 

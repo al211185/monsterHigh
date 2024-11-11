@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R5V-tD-e5m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -9,20 +9,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="SoZ-LN-Bkm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MonsterhIGH" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="5iX-q4-Jo6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oXg-Sj-oox">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R5V-tD-e5m" kind="relationship" relationship="rootViewController" id="jtH-hQ-CCY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sH-2k-htP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11.450381679389313" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-176" y="-4"/>
         </scene>
         <!--View Controller Lista-->
         <scene sceneID="w6i-aW-De3">
@@ -90,7 +91,6 @@
                                     <outlet property="Nombre" destination="rj1-lP-luV" id="2Wf-S8-Cac"/>
                                     <outlet property="Padres" destination="eEQ-pa-rYp" id="kj1-Tm-K31"/>
                                     <outlet property="foto_de_perfil" destination="ssu-kO-R9G" id="llZ-mZ-Eht"/>
-                                    <segue destination="HnV-8D-7oj" kind="show" identifier="showDetails" id="vtB-S7-c80"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -99,10 +99,11 @@
                             <outlet property="delegate" destination="R5V-tD-e5m" id="9wC-9d-iFZ"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="7n8-qY-Klx"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkI-Aj-iN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="-3"/>
+            <point key="canvasLocation" x="918" y="-4"/>
         </scene>
         <!--Monster Form View Controller-->
         <scene sceneID="NwW-1d-eio">
@@ -229,9 +230,9 @@
         <!--Detalles View Controller-->
         <scene sceneID="eZJ-7D-c96">
             <objects>
-                <viewController id="HnV-8D-7oj" customClass="DetallesViewController" customModule="MonsterhIGH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetallesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HnV-8D-7oj" customClass="DetallesViewController" customModule="MonsterhIGH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oej-Rn-nyQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl0-EW-deh">
@@ -277,7 +278,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJp-JW-P4U">
-                                <rect key="frame" x="31" y="66" width="138" height="100"/>
+                                <rect key="frame" x="31" y="125" width="138" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="QQz-jG-tv0"/>
                                 </constraints>
