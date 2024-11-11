@@ -90,7 +90,22 @@ class ViewControllerLista: UICollectionViewController {
     
     // MARK: - UICollectionViewDelegateFlowLayout (opcional)
 
-    // Si deseas cambiar el tamaño de las celdas dinámicamente, puedes hacerlo aquí
+    // Este método se ejecuta cuando el usuario hace clic en una celda de la colección
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedMonster = monsters[indexPath.item]
+        performSegue(withIdentifier: "showDetails", sender: selectedMonster.id)
+    }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            if let detallesVC = segue.destination as? DetallesViewController,
+               let monsterId = sender as? Int {
+                print("Pasando el id del monstruo: \(monsterId)")  // Verifica el id
+                detallesVC.monsterId = monsterId
+            }
+        }
+    }
 
 }
 

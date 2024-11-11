@@ -19,6 +19,9 @@
 		FB9A2EE12CDE7108000F0BD8 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EE02CDE7108000F0BD8 /* Monster.swift */; };
 		FB9A2EE42CDE7A8D000F0BD8 /* ViewControllerLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EE32CDE7A8D000F0BD8 /* ViewControllerLista.swift */; };
 		FB9A2EE72CDE7ED0000F0BD8 /* MonsterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EE62CDE7ED0000F0BD8 /* MonsterCollectionViewCell.swift */; };
+		FBFFAD8E2CE263BD004666EC /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFAD8D2CE263BD004666EC /* MonsterService.swift */; };
+		FBFFAD902CE265C0004666EC /* MonsterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFAD8F2CE265C0004666EC /* MonsterFormViewController.swift */; };
+		FBFFAD922CE26F6E004666EC /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFAD912CE26F6E004666EC /* DetallesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		FB9A2EE02CDE7108000F0BD8 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		FB9A2EE32CDE7A8D000F0BD8 /* ViewControllerLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLista.swift; sourceTree = "<group>"; };
 		FB9A2EE62CDE7ED0000F0BD8 /* MonsterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCollectionViewCell.swift; sourceTree = "<group>"; };
+		FBFFAD8D2CE263BD004666EC /* MonsterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterService.swift; sourceTree = "<group>"; };
+		FBFFAD8F2CE265C0004666EC /* MonsterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterFormViewController.swift; sourceTree = "<group>"; };
+		FBFFAD912CE26F6E004666EC /* DetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		FB9A2EAE2CDE6EB6000F0BD8 /* MonsterhIGH */ = {
 			isa = PBXGroup;
 			children = (
+				FBFFAD8C2CE263A7004666EC /* Servicios */,
 				FB9A2EE52CDE7EBC000F0BD8 /* ViewCell */,
 				FB9A2EE22CDE7A58000F0BD8 /* Pantallas */,
 				FB9A2EDF2CDE70F9000F0BD8 /* Modelos */,
@@ -148,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				FB9A2EE32CDE7A8D000F0BD8 /* ViewControllerLista.swift */,
+				FBFFAD8F2CE265C0004666EC /* MonsterFormViewController.swift */,
+				FBFFAD912CE26F6E004666EC /* DetallesViewController.swift */,
 			);
 			path = Pantallas;
 			sourceTree = "<group>";
@@ -158,6 +167,14 @@
 				FB9A2EE62CDE7ED0000F0BD8 /* MonsterCollectionViewCell.swift */,
 			);
 			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		FBFFAD8C2CE263A7004666EC /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				FBFFAD8D2CE263BD004666EC /* MonsterService.swift */,
+			);
+			path = Servicios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +310,11 @@
 			files = (
 				FB9A2EE12CDE7108000F0BD8 /* Monster.swift in Sources */,
 				FB9A2EE72CDE7ED0000F0BD8 /* MonsterCollectionViewCell.swift in Sources */,
+				FBFFAD922CE26F6E004666EC /* DetallesViewController.swift in Sources */,
 				FB9A2EB42CDE6EB6000F0BD8 /* ViewController.swift in Sources */,
+				FBFFAD8E2CE263BD004666EC /* MonsterService.swift in Sources */,
 				FB9A2EB02CDE6EB6000F0BD8 /* AppDelegate.swift in Sources */,
+				FBFFAD902CE265C0004666EC /* MonsterFormViewController.swift in Sources */,
 				FB9A2EE42CDE7A8D000F0BD8 /* ViewControllerLista.swift in Sources */,
 				FB9A2EB22CDE6EB6000F0BD8 /* SceneDelegate.swift in Sources */,
 			);

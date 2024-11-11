@@ -8,7 +8,7 @@ import Foundation
 
 // Estructura para representar un monstruo.
 struct Monster: Codable {
-    let id: Int
+    let id: Int?
     let nombre: String
     let edad: String
     let padres: String
