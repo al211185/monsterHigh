@@ -16,6 +16,7 @@ class ViewControllerLista: UICollectionViewController {
         super.viewDidLoad()
         // Llamar a la función para obtener los datos de la API
         fetchMonsterData()
+        
     }
     
     func fetchMonsterData() {
@@ -92,10 +93,9 @@ class ViewControllerLista: UICollectionViewController {
         
         // Instanciar el ViewController de detalles
         if let detallesVC = self.storyboard?.instantiateViewController(withIdentifier: "DetallesViewController") as? DetallesViewController {
-            detallesVC.monsterId = selectedMonster.id  // Pasar el ID del monstruo
+            detallesVC.monster = selectedMonster  // Pasar el objeto completo
             self.navigationController?.pushViewController(detallesVC, animated: true)
         }
     }
-
 }
 
