@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB17F3C92CE7A8170060EBBA /* GetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17F3C82CE7A8170060EBBA /* GetColor.swift */; };
 		FB9A2EB02CDE6EB6000F0BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EAF2CDE6EB6000F0BD8 /* AppDelegate.swift */; };
 		FB9A2EB22CDE6EB6000F0BD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EB12CDE6EB6000F0BD8 /* SceneDelegate.swift */; };
 		FB9A2EB42CDE6EB6000F0BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A2EB32CDE6EB6000F0BD8 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB17F3C82CE7A8170060EBBA /* GetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetColor.swift; sourceTree = "<group>"; };
 		FB9A2EAC2CDE6EB6000F0BD8 /* MonsterhIGH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterhIGH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9A2EAF2CDE6EB6000F0BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9A2EB12CDE6EB6000F0BD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +113,7 @@
 		FB9A2EAE2CDE6EB6000F0BD8 /* MonsterhIGH */ = {
 			isa = PBXGroup;
 			children = (
-				FBD9DBA52CE5052B00A98579 /* Mod */,
+				FBD9DBA52CE5052B00A98579 /* Métodos */,
 				FBFFAD8C2CE263A7004666EC /* Servicios */,
 				FB9A2EE52CDE7EBC000F0BD8 /* ViewCell */,
 				FB9A2EE22CDE7A58000F0BD8 /* Pantallas */,
@@ -170,11 +172,13 @@
 			path = ViewCell;
 			sourceTree = "<group>";
 		};
-		FBD9DBA52CE5052B00A98579 /* Mod */ = {
+		FBD9DBA52CE5052B00A98579 /* Métodos */ = {
 			isa = PBXGroup;
 			children = (
+				FB17F3C82CE7A8170060EBBA /* GetColor.swift */,
 			);
-			path = Mod;
+			name = "Métodos";
+			path = "Métodos";
 			sourceTree = "<group>";
 		};
 		FBFFAD8C2CE263A7004666EC /* Servicios */ = {
@@ -324,6 +328,7 @@
 				FB9A2EB02CDE6EB6000F0BD8 /* AppDelegate.swift in Sources */,
 				FBFFAD902CE265C0004666EC /* MonsterFormViewController.swift in Sources */,
 				FB9A2EE42CDE7A8D000F0BD8 /* ViewControllerLista.swift in Sources */,
+				FB17F3C92CE7A8170060EBBA /* GetColor.swift in Sources */,
 				FB9A2EB22CDE6EB6000F0BD8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
